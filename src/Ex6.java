@@ -35,7 +35,6 @@ public class Ex6 {
             } else if (eleccion.equals("4")) {
 
                 System.out.println("introduca la ruta del fichero a desglosar");
-                File file = new File(utils.scanner.nextLine());
                 ruta = utils.scanner.nextLine();
                 File fileMostrar = new File(ruta);
                 System.out.println(fileMostrar.getName());
@@ -64,6 +63,11 @@ public class Ex6 {
 
 
             } else if (eleccion.equals("5")) {
+                System.out.println("introduca la ruta del primer archivo a comparar");
+                String ruta1 = utils.scanner.nextLine();
+
+                System.out.println("introduca la ruta del segundo archivo a comparar");
+                String ruta2 = utils.scanner.nextLine();
                 
             } else if (eleccion.equals("6")) {
                 salir = true;
